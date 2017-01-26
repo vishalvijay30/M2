@@ -41,7 +41,7 @@ public class Person3 {
 	 * @param input the string to be reversed
 	 * @return the reversed string
 	 */
-	private static String calc(String input) {
+	private String calc(String input) {
 	  //Person 3 put your implementation here
 		int size = input.length();
 		System.out.println(size);
