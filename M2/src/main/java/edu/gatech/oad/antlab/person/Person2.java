@@ -1,4 +1,5 @@
 package edu.gatech.oad.antlab.person;
+import java.util.ArrayList;
 
 /**
  *  A simple class for person 2
@@ -16,9 +17,9 @@ public class Person2 {
 	 * name
 	 * @param pname the person's real name
 	 */
-	 public Person2(String pname) {
-	   name = pname;
-	 }
+	public Person2(String pname) {
+	    name = pname;
+	}
 	/**
 	 * This method should take the string
 	 * input and return its characters in
@@ -31,7 +32,19 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+        char[] finalArray = new char[];
+        List<char> randArray = new ArrayList();
+	    for (int i = 0; i < input.length(); i++) {
+            randArray.add(input[i]);
+        }
+        int j = 0;
+        while (randArray.length() > 0) {
+            int rand = Math.random(randArray.length());
+            finalArray[j] = randArray.remove(rand);
+            j++;
+        }
+        String fin = finalArray.toString();
+        return fin;
 	}
 	/**
 	 * Return a string rep of this object
