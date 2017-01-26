@@ -31,7 +31,16 @@ public class Person4 {
      */
     private String calc(String input) {
       //Person 4 put your implementation here
-      return null;
+        String newI = "";
+        int stringL = input.length();
+        for (int i = 0; i < stringL; i++) {
+            char currI = input.charAt(i);
+            int currINum = currI + 1;
+            String newC = String.valueOf(currINum);
+            newI = newI + 1;
+        }
+
+      return newI;
     }
     
     /**
