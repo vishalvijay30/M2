@@ -32,19 +32,20 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-        char[] finalArray = new char[input.length()];
-        List<char> randArray = new ArrayList();
-	    for (int i = 0; i < input.length(); i++) {
-            randArray.add(input[i]);
-        }
-        int j = 0;
-        while (randArray.length() > 0) {
-            int rand = Math.random(randArray.length());
-            finalArray[j] = randArray.remove(rand);
-            j++;
-        }
-        String fin = finalArray.toString();
-        return fin;
+     //    char[] finalArray = new char[input.length()];
+     //    List<char> randArray = new ArrayList();
+	    // for (int i = 0; i < input.length(); i++) {
+     //        randArray.add(input[i]);
+     //    }
+     //    int j = 0;
+     //    while (randArray.length() > 0) {
+     //        int rand = Math.random(randArray.length());
+     //        finalArray[j] = randArray.remove(rand);
+     //        j++;
+     //    }
+     //    String fin = finalArray.toString();
+     //    return fin;
+        return input;
 	}
 	/**
 	 * Return a string rep of this object
