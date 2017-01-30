@@ -46,7 +46,7 @@ public class Person3 {
 		int size = input.length();
 		String aString = "";
 		for (int i = size; i >= 0; i--) {
-		aString += input.charAt(i);
+			aString += input.charAt(i);
 		}
 		return aString;
 	}
