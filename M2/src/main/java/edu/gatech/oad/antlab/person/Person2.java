@@ -32,14 +32,14 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-        char[] finalArray = new char[];
-        List<char> randArray = new ArrayList();
+        char[] finalArray = new char[input.length()];
+        ArrayList<Character> randArray = new ArrayList<Character>();
 	    for (int i = 0; i < input.length(); i++) {
-            randArray.add(input[i]);
+            randArray.add(input.charAt(i));
         }
         int j = 0;
-        while (randArray.length() > 0) {
-            int rand = Math.random(randArray.length());
+        while (randArray.size() > 0) {
+            int rand = (int) Math.floor(Math.random() * randArray.size());
             finalArray[j] = randArray.remove(rand);
             j++;
         }
