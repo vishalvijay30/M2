@@ -39,7 +39,7 @@ public class Person6 {
         for (int i = 0; i < 2; i++) {
             output = output + input.charAt(i);
         }
-        return output;
+        return 1;
     }
 
     /**
