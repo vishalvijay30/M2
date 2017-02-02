@@ -4,7 +4,6 @@ apply plugin: 'java'
 
 dependencies {
 	compile files('lib/resources.jar');
-    	runtime files('lib/resources.jar');
 }
 
 jar { 
